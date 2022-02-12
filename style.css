@@ -1,0 +1,247 @@
+
+/* animation */
+
+@keyframes rolling{
+
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(-40%);
+    }
+    75% {
+        transform: translateY(-60%);
+    }
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+
+
+/* css reset */
+
+body, ul, p, h1, h2 {
+    margin:0;
+    /* background-color: #111; */
+    background-color: #f5f5dc;
+    color:#999;
+    
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+h1 {
+    font-size: 100%;
+    font-weight: 100%;
+    background-color: transparent;
+}
+
+
+a {
+    color:indianred;
+    text-decoration: none;
+}
+
+
+/* back image */
+
+.image{
+    position: relative;
+}
+
+.back__img {
+    background-image: url(picture1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 56.25%; 
+    height: 21vh;
+    
+}
+
+
+.header {
+    position: absolute;
+    left:43%;
+    top:60%;
+    background-color: transparent;
+
+}   
+
+.name {
+    font-weight: 1000;
+    padding-left: 0.5em;
+    font-size: 30px;
+    line-height: 2;
+    color: black;
+    font-style: italic;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.name__job {
+    display: inline-block;
+    vertical-align: top;
+    height: 2em;
+    overflow: hidden;
+    padding-right: 1em;
+    
+}
+
+.name__job_list {
+    color: deeppink;
+    padding-left: 0;
+    animation-name: rolling;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    background-color: transparent;
+}
+
+.name__title {
+    font-size: 1.35em;
+    line-height: 0.8;
+    color:white;
+    
+}
+
+
+
+/* profile */
+
+.profile {
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.profile h2 {
+    color: rgb(3, 58, 3);
+    
+}
+
+.summary {
+   padding-top: 5%;
+   text-align: center;   
+}
+
+.summary__title {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 2.5em;
+    
+}
+
+
+.summary__list {
+    padding-top: 5%;
+    display: flex;
+    background-color: #f5f5dc;
+    justify-content: space-around;
+    text-align: left;
+    padding-bottom: 5%;
+    
+}
+
+.summary__list h2 {
+    color: rgb(3, 58, 3);
+    font-size: 2rem;
+    width:350px;
+}
+
+.summary__list li{
+    padding-top: 2rem;
+}
+
+
+.experience {
+    border-top: 3px solid olive;
+}   
+
+
+.experience li p {
+    color: green;
+    text-align:right;
+}
+
+
+.experience ul{
+    padding: 0;
+     color: darkolivegreen;
+}
+
+
+.skills {
+    border-top: 3px solid olive;     
+}
+
+
+.skills li p {
+    color: green;
+    
+}
+
+.skills ul {
+    padding-top:2rem;
+    padding-left:0;
+}
+
+
+
+/* graph */
+
+.greph li {
+    background-color: palegoldenrod;
+    color: darkolivegreen;
+    padding-top: 0em;
+    margin:0.4em 0;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    border-radius: 40px;
+    
+}
+
+.greph li::before {
+    content: attr(data-width);
+    float: right;
+    
+}
+
+.greph li[data-width="100%"] {width: 100%;}
+.greph li[data-width="90%"] {width: 90%;}
+.greph li[data-width="80%"] {width: 80%;}
+.greph li[data-width="70%"] {width: 70%;}
+.greph li[data-width="60%"] {width: 60%;}
+.greph li[data-width="50%"] {width: 50%;}
+
+
+/*contact*/
+
+
+.contact {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.contact h2 {
+    color: rgb(3, 58, 3);
+}
+
+.links a {
+    font-size: 0.8em;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    color: olive;
+}
+
+.links a:hover{
+    color:white;
+    transition: 0.3s;
+}
